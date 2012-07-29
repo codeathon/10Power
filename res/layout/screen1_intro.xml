@@ -1,43 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:background="#EEE9E9"
+    android:columnCount="2" >
 
-     <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:text="Power of 10" >
-        <requestFocus />
-    </EditText>
+
+    <ImageView
+        android:id="@+id/colorbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="left"
+        android:layout_row="0"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ColorBar" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:adjustViewBounds="true"
+        android:layout_width="264dp"
+        android:layout_column="1"
+        android:layout_gravity="left"
+        android:layout_row="1"
+        android:src="@drawable/ThePowerof10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_row="3"
+        android:layout_rowSpan="2"
+        android:text="With 10 photos in 10 minutes share your story with the world."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/button1_letsgetstarted"
+        
+        android:adjustViewBounds="true"
+        android:background="@drawable/Button"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center_horizontal"
+        android:layout_row="5"
+        android:text="Lets Get Started" />
+
+    <Space
+        android:layout_width="21dp"
+        android:layout_height="1dp"
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0" />
+
+    <Space
+        android:layout_width="299dp"
+        android:layout_height="1dp"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="21dp"
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_column="0"
+        android:layout_row="2" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="3" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="180dp"
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="4" />
+
+</GridLayout>
     
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:text="1. Step 1" >
-        <requestFocus />
-    </EditText>
-        <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:text="1. Step 2" >
-        <requestFocus />
-    </EditText>
-        <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:text="1. Step 3" >
-        <requestFocus />     
-    </EditText>
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lets get Started !" />
-
-</LinearLayout>

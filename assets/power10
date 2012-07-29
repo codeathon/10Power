@@ -1,0 +1,3 @@
+BEGIN TRANSACTION;
+CREATE TABLE p10 (p10_description TEXT, p10_path TEXT);
+COMMIT;

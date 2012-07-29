@@ -8,7 +8,9 @@
 
     <application
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
+        android:label="@string/app_name"
+        android:debuggable="true"  >
+        
         <activity
             android:name=".Power10Activity"
             android:label="@string/app_name" >
@@ -17,6 +19,40 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        	
+        <activity
+            android:name=".Question_home">
+        </activity>        	
+        <activity
+            android:name=".Question1">
+        </activity>        	
+        <activity
+            android:name=".Question2">
+        </activity>        	
+        <activity
+            android:name=".Question3">
+        </activity>        	
+        <activity
+            android:name=".Question4">
+        </activity>        	
+        <activity
+            android:name=".Question5">
+        </activity>        	
+        <activity
+            android:name=".Question6">
+        </activity>        	
+        <activity
+            android:name=".Question7">
+        </activity>        	
+        <activity
+            android:name=".Question8">
+        </activity>        	
+        <activity
+            android:name=".Question9">
+        </activity>        	
+        <activity
+            android:name=".Question10">
         </activity>
     </application>
 
